@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chirag Yadav Portfolio</title>
+<meta name="description" content="Portfolio of Chirag Yadav, B.Tech CSE (AI) student and co-runner of a family business in Ambala.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="field" aria-hidden="true"></canvas>
+
+<header class="navbar">
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo">CHIRAG <span>YADAV</span></a>
+    <nav class="nav-links" id="nav-links">
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+    </nav>
+    <div class="nav-right">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark and light mode">
+        <span class="icon-moon" aria-hidden="true">🌙</span>
+        <span class="icon-sun" aria-hidden="true">☀️</span>
+      </button>
+      <button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="top" class="section hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker rise">Portfolio &middot; Ambala, Haryana</p>
+        <h1 id="heroName" class="rise rise-2">Chirag <em>Yadav</em></h1>
+        <p class="lede rise rise-2">
+          First-year B.Tech student in Computer Science (AI) at Geeta University, and co-runner of
+          a family business. I build the software that runs it and I'm learning to build more.
+        </p>
+        <div class="chips rise rise-3">
+          <span>B.Tech CSE (AI)</span>
+          <span>Software Builder</span>
+          <span>Entrepreneur</span>
+          <span>SIH 2026 External Round</span>
+        </div>
+        <div class="cta-row rise rise-3">
+          <a href="#projects" class="btn btn-primary">See my projects &rarr;</a>
+          <a href="mailto:ahir16092004@gmail.com" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+      <div class="stage rise rise-2" aria-hidden="true">
+        <div class="orb">
+          <div class="core"></div>
+          <div class="ring r1"></div>
+          <div class="ring r2"></div>
+          <div class="ring r3"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section alt">
+    <div class="wrap about-grid">
+      <div>
+        <p class="kicker">About</p>
+        <p class="about-lead" style="margin-top: 14px;">
+          I grew up around a working business, so I learned early how a project moves from planning
+          to execution, and how much easier that gets with the right tools.
+        </p>
+      </div>
+      <div class="about-body">
+        <p>
+          My family and I run our business. I have built internal tools for it, including a quotation
+          maker, a CRM and a ledger, so quotes, customers and accounts stay organized in one place.
+        </p>
+        <p>
+          At Geeta University I study Computer Science with an AI specialization. My interests sit
+          where software meets real operations: practical AI, web development, and products that solve
+          everyday business problems.
+        </p>
+        <ul class="interests">
+          <li class="tilt">Artificial Intelligence and Machine Learning</li>
+          <li class="tilt">Web development and practical software</li>
+          <li class="tilt">Problem solving through hackathons and competitive programming</li>
+          <li class="tilt">Technology-driven entrepreneurship and business systems</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Skills</p>
+        <h2>What I work with</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card tilt">
+          <h3>Programming Languages</h3>
+          <div class="tags"><span>Python</span><span>JavaScript</span></div>
+        </div>
+        <div class="skill-card tilt">
+          <h3>Web Technologies</h3>
+          <div class="tags"><span>HTML5</span><span>CSS3</span><span>Responsive Design</span></div>
+        </div>
+        <div class="skill-card tilt">
+          <h3>Core Skills</h3>
+          <div class="tags"><span>Problem Solving</span><span>Git Basics</span></div>
+        </div>
+        <div class="skill-card tilt">
+          <h3>Tools</h3>
+          <div class="tags"><span>VS Code</span><span>GitHub</span><span>MS Office / PowerPoint</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Education</p>
+        <h2>Where I study</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content tilt">
+            <span class="timeline-date">First semester &middot; 2026 &ndash; Present</span>
+            <h3>Bachelor of Technology in Computer Science Engineering (AI Specialization)</h3>
+            <p class="institution">Geeta University, Panipat, Haryana &bull; via NIAT (NxtWave)</p>
+            <ul>
+              <li>Core programming, data structures and AI fundamentals</li>
+            </ul>
+            <div class="achieve">Nominated for the Smart India Hackathon 2026 external round</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content tilt">
+            <span class="timeline-date">School</span>
+            <h3>School Education</h3>
+            <p class="institution">God Blessing Public School, Delhi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Projects</p>
+        <h2>Tools I built</h2>
+      </div>
+      <div class="projects-grid">
+        <a class="project-tile tilt" href="https://claude.ai/artifact/LFWJn1WMXjEHe3NfZj9Sqk" target="_blank" rel="noopener">
+          <span class="num">01</span>
+          <h3>CRM</h3>
+          <span class="open">Open project &rarr;</span>
+        </a>
+        <a class="project-tile tilt" href="https://claude.ai/artifact/PEfA6LZzQEMpyMbKzcDkTi" target="_blank" rel="noopener">
+          <span class="num">02</span>
+          <h3>ROI Calculator</h3>
+          <span class="open">Open project &rarr;</span>
+        </a>
+        <a class="project-tile tilt" href="https://claude.ai/artifact/V2fswUbnp4u2VqJNJkUkZz" target="_blank" rel="noopener">
+          <span class="num">03</span>
+          <h3>Ledger</h3>
+          <span class="open">Open project &rarr;</span>
+        </a>
+      </div>
+      <p class="project-note">More in progress.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <p class="kicker">Contact</p>
+        <h2>Let's build something useful.</h2>
+      </div>
+      <div class="footer-col">
+        <h4>Find me</h4>
+        <a href="https://github.com/ahir16092004-coder" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <div class="footer-col">
+        <h4>Reach out</h4>
+        <a href="mailto:ahir16092004@gmail.com">ahir16092004@gmail.com</a>
+        <p>9639676579</p>
+        <p>Ambala, Haryana, India</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>&copy; 2026 Chirag Yadav. All rights reserved.</span>
+      <span>Ambala, Haryana</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
